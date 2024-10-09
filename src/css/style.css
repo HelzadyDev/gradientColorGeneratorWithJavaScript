@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: poppins;
+}
+
+body {
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(to left top, #0369a1, #a271f8);
+}
+
+.wrapper {
+  width: 550px;
+  padding: 35px 30px 25px 30px;
+  background-image: url(../img/background.jpg);
+  background-size: cover;
+  border-radius: 15px;
+  box-shadow: 0 1.5em 3em rgba(3, 21, 55, 0.3);
+}
+
+.wrapper .box {
+  height: 290px;
+  width: 100%;
+  border-radius: 7px;
+  border: 2px solid #00695c;
+  background: linear-gradient(to left top, #5665e9, #a271f8);
+}
+
+.wrapper .row {
+  display: flex;
+  margin: 20px 0;
+  justify-content: space-between;
+}
+
+.options p {
+  font-weight: 700px;
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.row :where(.column, button) {
+  width: calc(100% / 2 -12px);
+}
+
+.options .select-box {
+  border-radius: 5px;
+  padding: 10px 15px;
+  background-color: #0369a1;
+}
+
+.select-box select {
+  background-color: #0369a1;
+  color: #fff;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 1.2rem;
+  appearance: none;
+  background-image: url(../img/arrow.png);
+  background-repeat: no-repeat;
+  background-size: 1em;
+  background-position: 5.3em;
+}
+
+.options .palette {
+  margin-left: 60px;
+}
+
+.palette {
+  height: 41px;
+  width: calc(100% / 2-20px);
+}
+
+.palette input:last-child {
+  margin-left: 6px;
+}
+
+.wrapper textarea{
+    width: 100%;
+    color: #fff;
+    font-size: 18px;
+    resize: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #0369a1;
+}
+
+.colors{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10px 5px 10px;
+    background-color: #0369a1;
+    border-radius: 5px;
+}
+
+.colors input{
+    appearance: none;
+    background-color: transparent;
+    width: 150px;
+    height: 35px;
+    outline: none;
+    border: none;
+}
+
+.colors input::-webkit-color-swatch{
+    border-radius: 0.3em;
+    border: 1px solid #fff;
+}
+
+.buttons button{
+    padding: 15px 0px;
+    border: none;
+    outline: none;
+    color: #fff ;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.buttons .refresh,.copy{
+    background-color: #0369a1;
+}
+
+.buttons .refresh:hover,.copy:hover{
+    background-color: #043956;
+    color: #fff;
+}
